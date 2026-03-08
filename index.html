@@ -881,8 +881,24 @@ footer a:hover { color: #FFF; }
   .profile-tags { justify-content: center; }
   .profile-links { justify-content: center; flex-wrap: wrap; }
 
-  .article-card { grid-template-columns: 1fr; }
-  .article-thumb { aspect-ratio: 16/9; }
+  .container { width: 100%; }
+
+  .article-card {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .article-thumb {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+  .article-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .article-body {
+    padding: 1.5rem;
+  }
 
   .features-grid {
     grid-template-columns: 1fr;
